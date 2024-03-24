@@ -285,7 +285,7 @@ def affichage_Graph(request):
 
 
 
-##esma
+##esma Mougatta
 
 # import pandas as pd
 # import networkx as nx
@@ -380,7 +380,7 @@ def afficher_graphe_chemin(request):
     fichier_excel = "Cordonnees_GPS.xlsx"
     coords = charger_coordonnees_excel(fichier_excel)
     
-    moughataa_depart = "Arafat"  # Or get it dynamically from the request
+    moughataa_depart = "Nouakchott"  # Or get it dynamically from the request
     
     chemin, distance_totale = tsp_approximation(moughataa_depart, coords)
     
@@ -425,6 +425,8 @@ def afficher_graphe_chemin(request):
 
 
 
+
+###############################################################################
 
 #esmaWilya
 
@@ -478,7 +480,7 @@ coords = charger_coordonnees_excel(fichier_excel)
 chemin, distance_totale = tsp_approximation(ville_depart, coords)
 
 # Fonction pour afficher le graphe des rues avec les chemins de tournée
-def afficher_graphe_chemin(coords, chemin, ville_depart):
+def afficher_graphe_chemin2(coords, chemin, ville_depart):
     # Extraire les coordonnées des villes dans l'ordre du chemin de tournée
     chemin_coords = [coords[ville] for ville in chemin]
 
@@ -528,7 +530,7 @@ def afficher_graphe_chemin(coords, chemin, ville_depart):
 # Afficher le graphe des rues avec les chemins de tournée
 
 def afficher_grph2(request):
-    plot_div=afficher_graphe_chemin(coords, chemin, ville_depart)
+    plot_div=afficher_graphe_chemin2(coords, chemin, ville_depart)
 
     context = {'plot_div': plot_div}
     return render(request, 'graph.html', context)
