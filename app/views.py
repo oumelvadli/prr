@@ -21,7 +21,7 @@ import pandas as pd
 
 import random
 import networkx as nx
-import matplotlib.pyplot as plt
+
 from geopy.distance import geodesic
 from .ant_colony_class import AntColony  # Assuming you have an AntColony implementation
 from django.conf import settings  
