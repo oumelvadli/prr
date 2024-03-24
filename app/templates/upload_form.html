@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload de fichier</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/up.css' %}">
+
+</head>
+<body>
+    <h1>Upload de fichier</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+    {% comment %} <script>
+        document.getElementById('upload-form').onsubmit = function() {
+            // Afficher un message d'alerte
+            alert("Le fichier a été Uploader avec succès !");
+        }
+    </script> {% endcomment %}
+</body>
+</html>

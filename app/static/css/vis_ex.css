@@ -1,0 +1,156 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #646262;
+    color: #ffffff;
+
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    color: #f3efef;
+    text-align: center;
+}
+a {
+    display: block;
+    margin-bottom: 20px;
+    color: #f77c17;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    padding: 8px 20px;
+    background-color: #f7741d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #fa7223;
+}
+
+/* Style de la zone de visualisation */
+.data-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Form Styles */
+form {
+    margin: 20px auto;
+    text-align: center;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f86b19;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #eb4e0f;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #f36726;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.html-data-container {
+    background-color: #646262;
+    color: #ffffff; 
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px; 
+    text-align: center;
+}
+.html-data-container table {
+    width: 100%; /* Ajuster la largeur du tableau à 100% de la div parente */
+    table-layout: fixed; /* Fixer la largeur des colonnes */
+}
+
+/* Style des cellules du tableau */
+.html-data-container th, .html-data-container td {
+    padding: 8px; /* Ajuster l'espacement interne des cellules */
+    border: 1px solid #ddd; /* Ajouter une bordure aux cellules */
+}
+
+/* Style des en-têtes de colonne */
+.html-data-container th {
+    background-color: #646262; /* Couleur de fond des en-têtes de colonne */
+    text-align: left; /* Alignement du texte à gauche */
+    font-weight: bold; /* Texte en gras */
+}
+/* Style des boutons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f36726;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.button:hover {
+    background-color: #f36726;
+}
+.button-container {
+    text-align: center; 
+}

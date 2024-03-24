@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualisation du fichier Excel</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/vis_ex.css' %}">
+</head>
+<body>
+    
+    <h1>Les données des Wilayas et Mougataa</h1>
+    <div class="button-container">
+    <a href="{% url 'upload_file' %}" class="button">Uploader un nouveau fichier</a>
+    <br>
+    <a href="{% url 'telecharger_excel' %}" class="button">Télécharger le fichier principale</a>
+    </div>
+    <form method="get">
+        <select id="feuille" name="feuille">
+            {% for feuille in feuilles %}
+                <option value="{{ feuille }}">{{ feuille }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Visualiser">
+    </form>
+
+    <div class="html-data-container">
+        {{ html_data | safe }}
+    </div>
+</body>
+</html>
